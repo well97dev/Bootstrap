@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,95 +8,199 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <title>Cards</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark mb-5 " style="background-color:#a102c3;"
-    aria-label="Third navbar example">
-    <div class="container">
-        <a class="navbar-brand" href="#">Expand at sm</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
-            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarsExample03">
-            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                        aria-expanded="false">Dropdown</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <form role="search">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            </form>
+        aria-label="Third navbar example">
+        <div class="container">
+            <a class="navbar-brand" href="#">Expand at sm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
         </div>
-    </div>
-</nav>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-md-8 mt-5">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="mb-3"><strong>Build fast, responsive sites <br> with Bootstrap</strong></h1>
-                    <p class="fs-5">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with
-                        Sass, utilize
-                        prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
-                    </p>
-                    <div id="alerta" class="d-none alert alert-warning alert-dismissible fade show" role="alert">
-                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-8 mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="mb-3"><strong>Build fast, responsive sites <br> with Bootstrap</strong></h1>
+                        <p class="fs-5">Powerful, extensible, and feature-packed frontend toolkit. Build and customize
+                            with
+                            Sass, utilize
+                            prebuilt grid system and components, and bring projects to life with powerful JavaScript
+                            plugins.
+                        </p>
+                        <div id="alerta" class="d-none alert alert-warning alert-dismissible fade show" role="alert">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <a href="#" style="background-color:#a102d1; border:1px solid #a102d1"
+                            class="btn btn-primary btn-lg p-3">Get started</a>
+                        <button onclick="mostraAlert()" type="button"
+                            class="btn p-3 btn-outline-secondary btn-lg">Download</button>
                     </div>
-                    <a href="#" style="background-color:#a102d1; border:1px solid #a102d1"
-                        class="btn btn-primary btn-lg p-3">Get started</a>
-                    <button onclick="mostraAlert()" type="button" 
-                    class="btn p-3 btn-outline-secondary btn-lg">Download</button>
+                </div>
+
+            </div>
+            <div class="col-md-4 border mt-5">
+                <img class="img-fluid rounded" src="https://picsum.photos/500/250" alt="Imagem01">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 mt-5">
+                <div class="card">
+                    <img class="card-img-top" src="https://picsum.photos/500/250" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
             </div>
-            
-        </div>
-        <div class="col-md-4 border mt-5">
-            <img class="img-fluid rounded" src="https://picsum.photos/500/250" alt="Imagem01">
-        </div>
-    </div>
-    
-    <div class="col-md-3 mt-5">
-        <div class="card">
-            <img src="https://picsum.photos/500/250" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-md-3 mt-5">
+                <div class="card">
+                    <img class="card-img-top" src="https://picsum.photos/500/250" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5">
+                <div class="card">
+                    <img class="card-img-top" src="https://picsum.photos/500/250" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5">
+                <div class="card">
+                    <img class="card-img-top" src="https://picsum.photos/500/250" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5">
+                <div class="card h-100">
+                    <h5 class="card-header">Featured</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card text-bg-dark mb-3">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dark card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mt-5">
+                <div class="card h-100 mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://picsum.photos/200/300" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-3">
 
-    </div>
-    <div class="col-md-3">
+        <div class="card-group mt-5">
+            <div class="card">
+                <img src="https://picsum.photos/500/250" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/500/250" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/500/300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
 
-    </div>
-    <div class="col-md-3">
 
-    </div>
+
         <!-- Scripts -->
         <script src="/js/bootstrap.bundle.min.js"></script>
         <script>
-            function mostraAlert(){
+            function mostraAlert() {
                 var alerta = document.getElementById('alerta');
                 alerta.classList.toggle('d-none');
             }
         </script>
 </body>
+
 </html>
