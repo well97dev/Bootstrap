@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark mb-5 " style="background-color:#a102c3;"
+        aria-label="Third navbar example">
+        <div class="container">
+            <a class="navbar-brand" href="#">Expand at sm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mt-5">
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="mb-3"><strong>Build fast, responsive sites <br> with Bootstrap</strong></h1>
+                    <p class="fs-5">Powerful, extensible, and feature-packed frontend toolkit. Build and customize
+                        with
+                        Sass, utilize
+                        prebuilt grid system and components, and bring projects to life with powerful JavaScript
+                        plugins.
+                    </p>
+                    <div id="alerta" class="d-none alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <a href="#exampleModal" data-bs-toggle="modal" style="background-color:#a102d1; border:1px solid #a102d1"
+                        class="btn btn-primary btn-lg p-3">Get started</a>
+                    <button data-bs-toggle="modal" data-bs-target="#stactBackdrop" type="button"
+                        class="btn p-3 btn-outline-secondary btn-lg">Download</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4 border mt-5">
+            <div id="carouselExampleCaptions" class="carousel slide corousel-fade" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 mt-5">
+                <div class="card h-100">
+                    <h5 class="card-header">Featured</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                        </p>
+                        <p>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Link with href
+                            </a>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Button with data-bs-target
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card  mb-3">
+                    <div class="card-header">Menu</div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action ">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="https://picsum.photos/250/250" class="img-fluid rounded-circle"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-8 mt-2">
+                                        <b class="mt-5">Um nome qualquer</b>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mt-5">
+                <div class="card h-100 mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://picsum.photos/200/300" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-labelledby="staticBackdrop">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas autem, sed, sint ducimus voluptas, maiores eius reprehenderit deserunt provident non quaerat. Facere impedit odio, reprehenderit ea eius provident sequi debitis?</p>
+                        <p>Vel veniam omnis aperiam eum earum iure labore exercitationem, molestiae totam! Hic nesciunt repellat molestiae odio ratione, quidem necessitatibus cupiditate in, et quia, nostrum beatae ipsam labore rem veniam pariatur.</p>
+                        <p>Aut blanditiis magnam laudantium voluptas eligendi assumenda soluta eum reiciendis illum totam accusantium voluptates incidunt, eos consequuntur omnis libero quasi unde! Rerum debitis officiis quis culpa similique reprehenderit expedita laudantium?</p>
+                        <p>Officia voluptatem animi dolorum voluptates. Inventore delectus quod eius aliquid odio quia debitis temporibus illo omnis ducimus officia ad expedita impedit, quisquam nobis voluptates, doloremque dolor eaque accusamus pariatur sequi.</p>
+                        <p>Soluta accusamus, delectus modi voluptatum eum ab molestias harum, officiis itaque officia sed ad, iure facere! Hic suscipit incidunt debitis quam, culpa at architecto nisi eaque. Quaerat fuga dolorum cum?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga optio vero sunt! Dolorum sunt inventore, ducimus deserunt repellat obcaecati placeat excepturi tempore veniam possimus aperiam officiis doloremque quae voluptates ex!</p>
+                        <p>Deserunt veniam, odit numquam animi commodi modi. Deserunt repellat voluptatum, maiores cum non similique facere quasi assumenda ullam delectus omnis, minima quia obcaecati vel possimus rem. Voluptatum voluptatibus tempore molestias.</p>
+                        <p>Aperiam dolores sequi, molestiae error, aliquam ipsum eum, hic minus autem ex maiores nemo. Magnam iure ipsum, unde recusandae explicabo, facilis deserunt suscipit labore magni beatae provident dicta atque amet.</p>
+                        <p>Doloremque recusandae sit architecto quam quas ad esse maxime beatae magnam neque amet vel tenetur quidem quia praesentium eos quisquam molestiae, voluptatum et placeat maiores dicta dolor iste ea. Reprehenderit?</p>
+                        <p>Ullam provident dignissimos odio ipsa in dolor laboriosam amet tenetur consequatur incidunt excepturi aut, laborum vero illum, corrupti iure suscipit eius ut vel nesciunt praesentium quasi doloremque temporibus? Blanditiis, assumenda.</p>
+                        <p>Ipsum ipsa ab voluptatum officiis eos, aliquid impedit sequi aliquam nemo, odit quibusdam nisi, maiores repudiandae eum quia magnam doloribus neque nihil excepturi. Atque eius quisquam nesciunt vel, laudantium nostrum?</p>
+                        <p>Libero esse dolore dicta, voluptate velit quod corporis quibusdam. Ex qui aliquam, velit dolor magnam incidunt ad modi quibusdam, corporis hic alias nesciunt, ullam error ipsa veniam voluptatum eaque minus.</p>
+                        <p>Assumenda vitae voluptatum eaque? Ea molestiae fuga hic dignissimos autem, in repellat optio, tempore quo commodi ex id eos, deserunt doloremque vitae nisi tenetur? Quisquam magnam voluptas ea ipsa quibusdam!</p>
+                        <p>Cumque temporibus deleniti harum aperiam expedita molestias. Maxime assumenda tempora iure dolorum voluptatem quo dolorem eos porro excepturi. At adipisci deleniti sed ducimus error dignissimos ea sapiente accusantium tempore sint.</p>
+                        <p>Vitae eius, quas aliquid soluta in cum, animi maiores delectus accusamus quasi, temporibus maxime magni suscipit! Sunt, nihil neque! Praesentium laborum nemo ullam dolores, id iste iure quos. Quas, ullam!</p>
+                        <p>Porro culpa, assumenda odit quo illum, nemo, cupiditate tempore deleniti dolor in numquam. Eos similique fugiat nulla quisquam dignissimos. Natus accusamus odio libero ullam nemo numquam hic voluptatum magnam exercitationem?</p>
+                        <p>Est voluptatibus totam aliquam id quaerat aperiam repellat qui, exercitationem consequatur excepturi minus fugiat odio repudiandae ipsam officia, rem obcaecati iste aut quas veniam! Deleniti in nihil itaque eaque corrupti!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script>
+            function mostraAlert() 
+                var modal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {});
+                setTimeout(function(){alert("Hello");}, 3000);
+                modal.show();
+            
+        </script>
+</body>
+
+</html>
